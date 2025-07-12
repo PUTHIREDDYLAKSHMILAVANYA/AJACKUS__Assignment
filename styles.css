@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 1rem;
+  background: #f4f4f4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#controls {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+#controls input,
+#controls select {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+#employee-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.employee-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #aaa;
+}
+
+.employee-card h3 {
+  margin-top: 0;
+}
+
+.employee-card button {
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+}
+
+#pagination {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#pagination button {
+  padding: 0.4rem 1rem;
+  margin: 0 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#form-section {
+  background: white;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 7px #aaa;
+  max-width: 400px;
+}
+
+#form-section label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#form-section input,
+#form-section select {
+  width: 100%;
+  padding: 0.4rem;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.form-buttons {
+  text-align: right;
+}
+
+.form-buttons button {
+  padding: 0.4rem 1rem;
+  margin-left: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  #controls {
+    flex-direction: column;
+  }
+}
+
+.employee-card {
+  border: 1px solid #ccc;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 5px;
+}
